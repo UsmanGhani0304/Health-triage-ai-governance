@@ -6,7 +6,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
-df = pd.read_csv('/sythetic_dataset.csv')
+df = pd.read_csv('/sythetic_dataset.csv')  #for colabs use this, if you're using it on local machine use "../dataset/sythetic_dataset.csv"
 
 X = df.drop('urgency_label', axis=1)
 y = df['urgency_label']
